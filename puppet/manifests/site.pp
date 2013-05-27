@@ -12,4 +12,9 @@ group { 'puppet':
   ensure => present,
 }
 
+package { ['git-core', 'apt-file']:
+  ensure => 'installed',
+}
+
+
 class { 'base': }
